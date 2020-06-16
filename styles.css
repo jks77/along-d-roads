@@ -1,0 +1,797 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 300;
+	overflow-y: visible;
+}
+
+*::selection {
+	background-color: black;
+	color: white;
+}
+
+p,
+h2 {
+	margin-bottom: 1em;
+}
+
+/* =====================
+        GENERAL
+======================*/
+h3 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 2em;
+	letter-spacing: 1px;
+}
+
+/* =====================
+        HEADER
+======================*/
+
+.image-container {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+header {
+	height: 970px;
+	width: 100%;
+	position: relative;
+}
+
+.header-container {
+	width: 100%;
+	padding: 1.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+header h1 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: white;
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: .8em 1.5em;
+	transition: color .1s ease-in-out;
+}
+
+header ul li a:hover {
+	color: #f9b862;
+}
+
+#home {
+	font-weight: 700;
+	border: 2px solid black;
+	transition: all .2s ease-in-out;
+}
+
+#home:hover {
+	color: white;
+	background-color: black;
+}
+
+/* =====================
+    CONTAINER MAIN
+======================*/
+
+.container-grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: minmax(1em, 1fr) minmax(400px, 1020px) minmax(1em, 1fr);
+}
+
+/* =====================
+        ALONG INFO
+======================*/
+
+.along-info {
+	grid-column: 2 / span 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px;
+	padding: 6em 0 4em;
+	border-bottom: 1px solid lightgray;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.8;
+	letter-spacing: .5px;
+}
+
+.along-info-content p {
+	margin-bottom: 1em;
+	color: rgba(0, 0, 0, .81);
+}
+
+.along-info-content-objective {
+	font-weight: 600;
+	color: #0d0d0d;
+	font-size: 15px;
+}
+
+.along-info-covid-statement-link {
+	color: #f9b862;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.along-info-img {
+	position: relative;
+	width: 100%;
+}
+
+.along-info-img img {
+	max-width: 360px;
+	object-fit: cover;
+	max-height: 450px;
+	display: block;
+	margin-left: auto;
+}
+
+.travel-philosophy {
+	position: absolute;
+	top: 1.5em;
+	left: 2em;
+	padding: 2em;
+	width: 180px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.travel-philosophy .travel-philosophy-pinterest-link {
+	display: inline-block;
+	background-color: #bd081c;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	font-size: 11px;
+	padding: 0px.2em;
+	position: absolute;
+	top: -10px;
+	right: 16px;
+	display: none;
+	letter-spacing: -.2px;
+}
+
+.travel-philosophy .travel-philosophy-pinterest-link i {
+	font-weight: 400;
+}
+
+.along-info-img:hover .travel-philosophy-pinterest-link {
+	display: block;
+}
+
+.travel-philosophy h3 {
+	margin-bottom: 1em;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: -.2px;
+}
+
+.travel-philosophy .read-more {
+	font-family: inherit;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.travel-philosophy .read-more:hover {
+	opacity: .8;
+}
+
+/* ==================================
+     FOLLOW ADVENTURE SOCIAL LINKS
+===================================*/
+
+.follow-social {
+	grid-column: 2 / span 1;
+	text-align: center;
+	padding: 4em 0 6em;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 3em;
+}
+
+.follow-social h3 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 2em;
+}
+
+.follow-social-links a {
+	text-decoration: none;
+	display: inline-block;
+	margin-right: .5em;
+	padding: .5em;
+	color: black;
+	transition: opacity .2s ease-in-out;
+}
+
+.follow-social-links i {
+	font-size: 40px;
+	font-family: FontAwesome;
+}
+
+.follow-social-links a:hover {
+	opacity: .6;
+}
+
+/* ========================
+       TRAVEL JOURNALS
+===========================*/
+
+.travel-journals {
+	grid-column: 2 / span 1;
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 4em;
+}
+
+.travel-journals-grid {
+	margin-top: 5em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 2em;
+	row-gap: 2.5em;
+}
+
+.travel-journals-item a {
+	display: block;
+}
+
+.travel-journals-item a:first-child {
+	margin-bottom: .5em;
+}
+
+.travel-journals-item-img {
+	object-fit: cover;
+	max-width: 100%;
+	max-height: 220px;
+}
+
+.travel-journals-item-summary {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	line-height: 1.4;
+	font-size: 12px;
+}
+
+/* ========================
+    SEARCH-BOX
+===========================*/
+
+.search {
+	grid-column: 2 / span 1;
+	text-align: center;
+	padding: 5em 0;
+	border-bottom: 1px solid #aaa;
+}
+
+.search-input {
+	font-family: inherit;
+	font-size: 12px;
+	border: 1px solid #aaa;
+	padding: 1.8em 1.5em 1.8em 3.6em;
+	position: relative;
+	width: 300px;
+	height: 3em;
+	outline: none;
+}
+
+.input-container {
+	position: relative;
+	display: inline-block;
+}
+
+.search-icon {
+	color: #555;
+	position: absolute;
+	z-index: 1;
+	margin-left: 1.3em;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: text;
+	/* padding: .75em; */
+}
+
+/* ========================
+    LAST TRAVELS
+===========================*/
+
+.last-travel {
+	grid-column: 2 / span 1;
+	text-align: center;
+}
+
+.last-travel-intro {
+	padding: 4em 0;
+}
+
+.last-travel-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 2em;
+	margin-bottom: 10em;
+}
+
+.last-travel-item img {
+	height: 150px;
+	object-fit: cover;
+	object-position: center bottom;
+}
+
+/*  YOUTUBE VIDEO  */
+
+.youtube-container {
+	grid-column: 2 / span 1;
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+	margin-bottom: 10em;
+}
+
+.youtube-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* =================
+    LATEST BLOG
+==================*/
+
+.latest-blog-container {
+	grid-column: 1 / -1;
+	background-image: url("https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1591442174554-LOJX2HZSHW44HPFSG1M1/ke17ZwdGBToddI8pDm48kHy1Pk5CWd5tBorWoGzY-N97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0r9YoV8ytu8SWDj21Bt3yU8s0HTWbgKswoHQpDQVpOFIeJ1yIHJdUnW7gTQQPJ8tQA/2L1A2812.jpg?format=2500w");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	height: 606px;
+	width: 100%;
+	margin-bottom: 6em;
+}
+
+.latest-blog {
+	margin: 0 auto;
+	width: 800px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.latest-blog-title {
+	font-size: 32px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.latest-blog-summary {
+	font-size: 80px;
+	font-weight: 500;
+	line-height: 1;
+	margin: .2em 0 .5em;
+}
+
+.latest-blog .read-more {
+	align-self: center;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid white;
+	margin: 0;
+	padding: .75em 2em;
+	transition: all .2s ease-in-out;
+}
+
+.latest-blog .read-more:hover {
+	color: black;
+	background-color: white;
+}
+
+/* ====================
+    NEXT_CITY_BREAK
+=====================*/
+
+.next-city-break {
+	grid-column: 2 / span 1;
+	margin-bottom: 6em;
+}
+
+.next-city-break-intro {
+	text-align: center;
+}
+
+.next-city-break-grid {
+	margin-top: 5em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 2.5em;
+	row-gap: 2.5em;
+}
+
+.next-city-break-img {
+	object-fit: cover;
+	max-width: 100%;
+	max-height: 305px;
+	margin-bottom: 2em;
+}
+
+.next-city-break-title {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.next-city-break-item .read-more {
+	text-decoration: none;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+	background-color: #f9b862;
+	margin: 0;
+	padding: 1.5em 2.5em;
+	transition: all .2s ease-in-out;
+	font-size: 10px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.next-city-break-item .read-more:hover {
+	opacity: .8;
+}
+
+.next-city-break-item-intro {
+	margin-bottom: 2.5em;
+	font-weight: 400;
+}
+
+/* ====================
+    NEW TO DUSTY ROADS
+=====================*/
+
+.new-to-d-roads {
+	grid-column: 1 / -1;
+	background-image: url("https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1564523185860-340THSZIM66R5LWD11AZ/ke17ZwdGBToddI8pDm48kEcdL3s03iWw4eqMrQZXv8J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdmXpjR3cDKyvtMFIoPoeRn0Jk4xIIeS-ZryRbimyZaFgI-WfnDpzU5VuREh46842w/IMG_9117.jpg?format=2500w");
+	background-position: bottom;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	height: 606px;
+	width: 100%;
+	margin-bottom: 6em;
+}
+
+.new-to-d-roads-container {
+	margin: 0 auto;
+	width: 800px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.new-to-d-roads-title {
+	font-size: 28px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.new-to-d-roads-summary {
+	font-size: 64px;
+	font-weight: 500;
+	line-height: 1;
+	margin: .4em 0 .5em;
+}
+
+.new-to-d-roads .read-more {
+	align-self: center;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid white;
+	margin: 0;
+	padding: .75em 2em;
+	transition: all .2s ease-in-out;
+}
+
+.new-to-d-roads .read-more:hover {
+	color: black;
+	background-color: white;
+}
+
+/* ====================
+    SOUTH AMERICA
+=====================*/
+
+.south-america {
+	grid-column: 2 / span 1;
+	margin-bottom: 6em;
+}
+
+.south-america-intro {
+	text-align: center;
+}
+
+.south-america-grid {
+	margin-top: 5em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 2.5em;
+	row-gap: 2.5em;
+}
+
+.south-america-img {
+	object-fit: cover;
+	max-width: 100%;
+	max-height: 305px;
+	margin-bottom: 2em;
+}
+
+.south-america-title {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.south-america-item .read-more {
+	text-decoration: none;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+	background-color: #f9b862;
+	margin: 0;
+	padding: 1.5em 2.5em;
+	transition: all .2s ease-in-out;
+	font-size: 10px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.south-america .read-more:hover {
+	opacity: .8;
+}
+
+.south-america-item-intro {
+	margin-bottom: 2.5em;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.8;
+}
+
+/* ========================
+    PLAN NEXT ADVENTURE
+=========================*/
+
+.plan-next-adventure {
+	grid-column: 1 / -1;
+	background-image: url("https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1564523294583-CESWMAXEWPEFTR92H4UY/ke17ZwdGBToddI8pDm48kJjv9n9KQOUs500Q8sRyIiJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXpZyRzLf9XsdxrQ6cdJ-HGmMP3z4KvmhVa_gi5521SOhbcSGSL7ORD0H2uCez34ng/DSC07431.jpg?format=2500w");
+	background-position: bottom center;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	height: 606px;
+	width: 100%;
+	margin-bottom: 6em;
+}
+
+.plan-next-adventure-container {
+	margin: 0 auto;
+	width: 800px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.plan-next-adventure-title {
+	font-size: 28px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.plan-next-adventure-summary {
+	font-size: 64px;
+	font-weight: 500;
+	line-height: 1;
+	margin: .4em 0 .5em;
+}
+
+.plan-next-adventure .read-more {
+	align-self: center;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid white;
+	margin: 0;
+	padding: .75em 2em;
+	transition: all .2s ease-in-out;
+}
+
+.plan-next-adventure .read-more:hover {
+	color: black;
+	background-color: white;
+}
+
+/* ====================
+    FOLLOW INSTAGRAM
+=====================*/
+
+.follow-instagram {
+	grid-column: 2 / span 1;
+	margin-bottom: 6em;
+	padding: 3em 0;
+	text-align: center;
+}
+
+.follow-instagram-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	width: 100%;
+	gap: 1em;
+}
+
+.img-container {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+}
+
+.img-container img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* ====================
+    	FOOTER
+=====================*/
+
+footer {
+	grid-column: 1 / -1;
+}
+
+.footer-container {
+	margin: 0 auto;
+	max-width: 900px;
+	text-align: center;
+	margin-bottom: 5em;
+	font-weight: 400;
+}
+
+.footer-nav-links {
+	padding: 0 0 4em;
+}
+
+.footer-nav-links ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-nav-links ul li {
+	margin-right: 2.5em;
+}
+
+.footer-nav-links ul a {
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: #0a0000;
+	font-size: 12px;
+}
+
+.footer-nav-links ul a:hover {
+	color: #f9b862;
+}
+
+.affiliate-links {
+	padding: 2em 0;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.8;
+}
+
+.affiliate-links p:first-child {
+	margin-bottom: 1.3em;
+}
+
+.copyright {
+	padding: 2em 0;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.along-d-roads-com {
+	font-size: 12px;
+}
+
+.footer-social-links a {
+	padding: .5em;
+	margin-right: .5em;
+	text-decoration: none;
+	color: rgba(0, 0, 0, .81);
+}
+
+.footer-privacy-settings,
+.exclusive-member {
+	margin-right: 0 auto;
+	text-align: center;
+	padding: 1em;
+	font-size: 9px;
+	color: black;
+	font-weight: 500;
+}
+
+.footer-privacy-settings a {
+	text-decoration: none;
+	color: black;
+}
