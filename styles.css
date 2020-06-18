@@ -915,7 +915,7 @@ footer {
 
 /* TODO: HAMBURGER DOES NOT FUNCTION OK ESPECIALLY ON MOBILE/TABLET.  */
 
-/* @media (max-width: 1055px) {
+@media (max-width: 1055px) {
 	.header-container {
 		display: block;
 		height: 100%;
@@ -930,8 +930,6 @@ footer {
 		width: 0;
 		transition: all .25s ease-in-out;
 	}
-
-	
 
 	.nav-open {
 		width: 260px;
@@ -955,10 +953,10 @@ footer {
 
 	.image-container-hamburger-nav-open {
 		transform: translateX(-260px);
-	} */
+	}
 
-/* Hamburger */
-/* .hamburger {
+	/* Hamburger */
+	.hamburger {
 		z-index: 10;
 		position: absolute;
 		height: 21px;
@@ -970,20 +968,20 @@ footer {
 
 	.hamburger:hover {
 		cursor: pointer;
-	} */
+	}
 
-/* individual line */
-/* .hamburger-line {
+	/* individual line */
+	.hamburger-line {
 		position: absolute;
 		height: 3px;
 		width: 24px;
 		background-color: black;
 		transition: all .25s ease-in-out;
-	} */
+	}
 
-/* hamburger: top, middle & bottom line */
+	/* hamburger: top, middle & bottom line */
 
-/* .hamburger-top-line {
+	.hamburger-top-line {
 		top: 0;
 		transform: rotate(0deg);
 	}
@@ -996,11 +994,11 @@ footer {
 	.hamburger-bottom-line {
 		top: 20px;
 		transform: rotate(0deg);
-	} */
+	}
 
-/* x: top, middle & bottom line */
+	/* x: top, middle & bottom line */
 
-/* .x-top-line {
+	.x-top-line {
 		top: 10px;
 		transform: rotate(45deg);
 	}
@@ -1014,4 +1012,4 @@ footer {
 		top: 10px;
 		transform: rotate(-45deg);
 	}
-} */
+}
