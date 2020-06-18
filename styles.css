@@ -785,8 +785,7 @@ header ul li a:hover {
 }
 
 @media (max-width: 600px) {
-	.new-to-d-roads,
-	.plan-next-adventure {
+	.new-to-d-roads {
 		margin-bottom: 3em;
 	}
 	.new-to-d-roads-container {
@@ -897,6 +896,10 @@ header ul li a:hover {
 }
 
 @media (max-width: 810px) {
+	.plan-next-adventure {
+		margin-bottom: 1em;
+	}
+
 	.plan-next-adventure-container {
 		width: 600px;
 	}
