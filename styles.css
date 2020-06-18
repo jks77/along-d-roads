@@ -6,15 +6,24 @@
 	padding: 0;
 }
 
+html {
+	border: 5px solid blue;
+	width: 100%;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
 body {
 	width: 100%;
-	max-width: 100%;
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 1.8;
 	font-weight: 300;
-	overflow-y: visible;
+	border: 1px solid red;
 }
 
 *::selection {
