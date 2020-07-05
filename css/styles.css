@@ -545,7 +545,7 @@ header ul li a:hover {
 
 .latest-blog-container {
 	grid-column: 1 / -1;
-	background-image: url("https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1591442174554-LOJX2HZSHW44HPFSG1M1/ke17ZwdGBToddI8pDm48kHy1Pk5CWd5tBorWoGzY-N97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0r9YoV8ytu8SWDj21Bt3yU8s0HTWbgKswoHQpDQVpOFIeJ1yIHJdUnW7gTQQPJ8tQA/2L1A2812.jpg?format=2500w");
+	background-image: url("../img/latest-blog/DSC08631.jpg");
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -725,9 +725,9 @@ header ul li a:hover {
 }
 
 .new-to-d-roads {
-	background-image: url("https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1564523185860-340THSZIM66R5LWD11AZ/ke17ZwdGBToddI8pDm48kEcdL3s03iWw4eqMrQZXv8J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdmXpjR3cDKyvtMFIoPoeRn0Jk4xIIeS-ZryRbimyZaFgI-WfnDpzU5VuREh46842w/IMG_9117.jpg?format=2500w");
+	background-image: url(../img/new-to-d-roads/man-woman-in-mountains.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: center 90%;
 }
 
 .new-to-d-roads-container,
@@ -892,14 +892,10 @@ header ul li a:hover {
 /* SEE ALSO SECTION "NEW TO DUSTY ROADS"  */
 
 .plan-next-adventure {
-	background-image: url("https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1564523294583-CESWMAXEWPEFTR92H4UY/ke17ZwdGBToddI8pDm48kJjv9n9KQOUs500Q8sRyIiJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXpZyRzLf9XsdxrQ6cdJ-HGmMP3z4KvmhVa_gi5521SOhbcSGSL7ORD0H2uCez34ng/DSC07431.jpg?format=2500w");
+	background-image: url("../img/plan-next-adventure/man-sit-rock-by-sea.jpg");
 }
 
 @media (max-width: 810px) {
-	.plan-next-adventure {
-		margin-bottom: 1em;
-	}
-
 	.plan-next-adventure-container {
 		width: 600px;
 	}
@@ -911,6 +907,10 @@ header ul li a:hover {
 }
 
 @media (max-width: 600px) {
+	.plan-next-adventure {
+		margin-bottom: 1em;
+	}
+
 	.plan-next-adventure-container {
 		width: initial;
 	}
